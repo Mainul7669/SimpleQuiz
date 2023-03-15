@@ -10,49 +10,45 @@
 </head>
 
 <body class="container mt-5">
-    <h1 class="fs-3 fw-bold  ">1) Write a Difference between <span class="text-danger"> map </span>,<span
-            class="text-danger">filter</span>,<span class="text-danger">find </span>,<span
-            class="text-danger">foreach</span></h1>
+    <h1 class="fs-4 fw-bold  ">1) What is the difference between map, filter, find, forEach method</h1>
     <p class="fs-6"><span class="
-        text-danger fw-bold">map()</span></strong> creates a new array with the results of calling a provided
+        fw-bold">map()=></span> creates a new array with the results of calling a provided
         function on every
         element in the calling array. It returns a new array with the same length as the original array.</p>
     <p class="fs-6"><span class="
-        text-danger fw-bold">filter()</span></strong> creates a new array with all elements that pass the test
+        fw-bold">filter()=></span></strong> creates a new array with all elements that pass the test
         implemented by
         the provided function. It returns a new array with only the elements that satisfy the condition.</p>
     <p class="fs-6"><span class="
-        text-danger fw-bold">forEach()</span></strong> executes a provided function once for each array element. It
+        fw-bold">forEach()=></span></strong> executes a provided function once for each array element. It
         does not
         return anything.</p>
     <p class="fs-6"><span class="
-        text-danger fw-bold">find()</span></strong> returns the value of the first element in the array that
+        fw-bold">find()=></span></strong> returns the value of the first element in the array that
         satisfies the
         provided testing function. It returns undefined if no element satisfies the condition.</p>
 
-    <h1 class="fs-3  fw-bold  ">2) What is the difference between <span class="text-danger">localStorage</span>,
-        <span class="text-danger">sessionStorage</span>, and <span class="text-danger">cookies </span> ?
+    <h1 class="fs-4  fw-bold  ">2) What is the difference between localStorage,
+        sessionStorage, and cookies ?
     </h1>
     <p class="fs-6"><span class="
-        text-success fw-bold">localStorage</span> localStorage is a property that allows JavaScript sites and apps to
+        fw-bold">localStorage:</span> localStorage is a property that allows JavaScript sites and apps to
         save
         key-value pairs in a web browser with no expiration date. This means the data stored in the browser will persist
         even after the browser window is closed.</p>
     <p class="fs-6"><span class="
-        text-success fw-bold">Session Storage</span> Session storage allows you to store data in the browser depending
+        fw-bold">Session Storage:</span> Session storage allows you to store data in the browser depending
         on the system memory and the data stored in the browser until the browser is closed.</p>
     <p class="fs-6"><span class="
-        text-success fw-bold">cookie</span> A cookie is a piece of data from a website that is stored within a web
+        fw-bold">cookie:</span> A cookie is a piece of data from a website that is stored within a web
         browser that the website can retrieve at a later time. </p>
 
 
 
 
 
-    <h1 class="fs-3  fw-bold  ">3) What is <span class="text-danger
-        "> Event Loop </span></Event> ? How does it Work?</h1>
-    <p class=""><span class="
-        text-bg-warning fw-bold p-1">event loop</span> is a loop that continually checks the message queue
+    <h1 class="fs-4  fw-bold">3) What is Event Loop? How does it work?</h1>
+    <p>Event loop is a loop that continually checks the message queue
         for
         new events and executes them one by one in the order they are received. Each event is processed synchronously,
         meaning that each event must finish executing before the next event in the queue can be processed.
@@ -63,22 +59,10 @@
         the message queue and executes its associated callback function. If there is code executing, the event loop
         waits until the code has finished executing before dequeuing and processing the next event in the queue. </p>
 
-    <h1 class="fs-3  fw-bold  ">4) Function work of <span class="text-danger
-        "> chooseQuiz</span> and <span class="text-danger
-        "> quizTimer </span></h1>
-    <p class="fs-6"><span class="
-            text-bg-info fw-bold p-1">chooseQuiz()</span> This function, chooseQuiz, takes two arguments: an index and
-        givenAns.
-
-        It first checks if there is an existing answer in the answers array that matches the ID of the quiz at the given
-        index in quizData. If there is, it updates the existing answer with the new givenAns value. If there is no
-        existing answer, it creates a new answer object with the quiz information from quizData and the givenAns value,
-        and adds it to the answers array.
-
-        Finally, the function calls the displayAnswers function with the updated answers array. </p>
+    <h1 class="fs-4  fw-bold  ">4) Function work of quizTimer</h1>
 
     <p class="fs-6"><span class="
-            text-bg-success p-1 fw-bold text-black">quizTimer()</span> This function, quizTimer, takes one argument,
+             p-1 fw-bold text-black">quizTimer()=></span> This function, quizTimer, takes one argument,
         dismiss.
 
         If dismiss is true, the function clears the interval timer and returns.
@@ -89,6 +73,21 @@
 
         If more than 60 seconds have passed, the function alternates between adding and removing classes to change the
         color of the timer display. </p>
+
+        <h1 class="fs-4  fw-bold  ">5) Function work of chooseQuiz</h1>
+    <p class="fs-6"><span class="
+            fw-bold p-1">chooseQuiz()=></span> This function, chooseQuiz, takes two arguments: an index and
+        givenAns.
+
+        It first checks if there is an existing answer in the answers array that matches the ID of the quiz at the given
+        index in quizData. If there is, it updates the existing answer with the new givenAns value. If there is no
+        existing answer, it creates a new answer object with the quiz information from quizData and the givenAns value,
+        and adds it to the answers array.
+
+        Finally, the function calls the displayAnswers function with the updated answers array. </p>
+
+   
+        
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
